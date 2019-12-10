@@ -1,0 +1,17 @@
+
+public class openBlanket {
+	public static void main(String[] args) {
+		boolean[] desk = new boolean[101];
+		
+		for(int i = 1;i <= 100; i++) {
+			for(int j = i;j <= 100; j+=i)
+				desk[j] =(!desk[j]);
+		}
+		
+		for(int m = 10; m <= 100; m++) {
+			if(desk[m] == true)
+				System.out.printf("%d ",m);
+		}
+	}
+}
+
